@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="568.0" prefWidth="796.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.tableviewcontroller">
+   <children>
+      <Button layoutX="338.0" layoutY="456.0" mnemonicParsing="false" onAction="#loadData" text="Load Data">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <TableView fx:id="tableUser" layoutX="14.0" layoutY="14.0" prefHeight="414.0" prefWidth="770.0">
+        <columns>
+          <TableColumn fx:id="column_id" prefWidth="25.599976539611816" text="ID" />
+          <TableColumn fx:id="column_name" prefWidth="124.80001449584961" text="Name" />
+            <TableColumn fx:id="column_gender" prefWidth="50.4000244140625" text="Gender" />
+            <TableColumn fx:id="column_day" prefWidth="28.00006103515625" text="day" />
+            <TableColumn fx:id="column_month" prefWidth="48.79998779296875" text="Month" />
+            <TableColumn fx:id="column_year" prefWidth="34.39996337890625" text="Year" />
+            <TableColumn fx:id="column_address" prefWidth="176.0" text="Address" />
+            <TableColumn fx:id="column_phoneNumber" prefWidth="149.60006713867188" text="PhoneNumber" />
+            <TableColumn fx:id="column_course" prefWidth="130.39996337890625" text="Course" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="440.0" mnemonicParsing="false" onAction="#goToRegis" text="Add Data">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="491.0" mnemonicParsing="false" onAction="#goToUpdate" text="Update Data">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="585.0" layoutY="470.0" text="ID" />
+      <TextField fx:id="text_id" layoutX="606.0" layoutY="466.0" prefHeight="26.0" prefWidth="42.0" />
+      <Button layoutX="672.0" layoutY="466.0" mnemonicParsing="false" onAction="#searchName" text="Search ID" />
+      <Label layoutX="615.0" layoutY="440.0" text="Delete Data by ID" />
+      <Label fx:id="text_name" layoutX="613.0" layoutY="502.0" prefHeight="18.0" prefWidth="134.0" text="Name" textAlignment="CENTER" />
+      <Button layoutX="646.0" layoutY="530.0" mnemonicParsing="false" onAction="#deleteName" text="Delete" />
+   </children>
+</AnchorPane>
